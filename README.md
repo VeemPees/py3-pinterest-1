@@ -45,18 +45,18 @@ Login is required to permit actions to the Pinterest servers. Login will store a
 
 
 ## Load profile
-You can load profile for currently logged in user or any user specified by username.
+You can load the profile for the currently logged in user or any user specified by username.
 
 ```user_profile = pinterest.get_user_overview()```
 
 
 ## Board and pin management
 
-### Get all boards of user:
+### Get all boards of a user:
 
 ```boards = pinterest.boards(username='username')```
 
-### List all pins in board
+### List all pins in a board
 ```pins = pinterest.board_feed(board_id=board_id)```
 
 If username is left blank, current logged in user will be used.
@@ -101,7 +101,7 @@ pinner_username = response_data["resource_response"]["data"]["pinner"]["username
 pinner_id = response_data["resource_response"]["data"]["pinner"]["id"]
 
 # If you wanted to access this information in a different circumstance,
-# keep in mind that whatever your creating should be the first level under "data"
+# keep in mind that whatever you are creating should be the first level under "data"
 # I.e, I created a board, and I want to get the board ID. It would now be:
 
 board_id = response_data["resource_response"]["data"]["id"]

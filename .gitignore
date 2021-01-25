@@ -5,6 +5,12 @@ build/**
 dist/**
 py3_pinterest.egg-info/**
 test.py
+secret_account_info.py
 cred_root/**
+__pycache__/**
 py3pin/cred_root/**
 venv/*
+.mypy_cache/
+.venv
+index.html
+
